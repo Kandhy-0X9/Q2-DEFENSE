@@ -162,6 +162,6 @@ def main():
 
 
 
-# If this script is run directly (not imported), call the main function to start the program.
+# If this script is run directly , call the main function to start the program.
 if __name__ == "__main__":
     main()
