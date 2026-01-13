@@ -11,8 +11,8 @@ birds = {
     'flamingo': {
         'file': 'flamingo.txt',
         'questions': [
-            {'q': 'What is the primary color of flamingos?', 'a': 'pink'},
-            {'q': 'How do flamingos feed?', 'a': 'filter feed upside-down'},
+            {'q': 'What is the primary color of flamingos?', 'a': ['pink','pinkish','color pink']},
+            {'q': 'How do flamingos feed?', 'a': ['filter feed upside-down', 'filter feed']},
             {'q': 'What is a group of flamingos called?', 'a': 'flamboyance'}
         ]
     },
@@ -27,24 +27,24 @@ birds = {
     'cassowaries': {
         'file': 'Cassowaries.txt',
         'questions': [
-            {'q': 'What is the casque on a cassowary?', 'a': 'a bony helmet'},
-            {'q': 'Are cassowaries flightless?', 'a': 'yes'},
-            {'q': 'What do cassowaries primarily eat?', 'a': 'fruit'}
+            {'q': 'What is the casque on a cassowary?', 'a': ['a bony helmet','bone helmet']},
+            {'q': 'Are cassowaries flightless?', 'a': ['yes','true']},
+            {'q': 'What do cassowaries primarily eat?', 'a': ['fruit', 'fruits']}
         ]
     },
     'crane': {
         'file': 'crane.txt',
         'questions': [
-            {'q': 'What do cranes perform for bonding?', 'a': 'dances'},
-            {'q': 'Are cranes monogamous?', 'a': 'yes'},
-            {'q': 'What is the primary habitat of cranes?', 'a': 'wetlands'}
+            {'q': 'What do cranes perform for bonding?', 'a': ['dances', 'dancing']},
+            {'q': 'Are cranes monogamous?', 'a': ['yes','true']},
+            {'q': 'What is the primary habitat of cranes?', 'a': ['wetlands', 'shallow swamps',]}
         ]
     },
     'albatross': {
         'file': 'albatross.txt',
         'questions': [
-            {'q': 'What is the largest wingspan of any bird?', 'a': 'wandering albatross'},
-            {'q': 'How do albatrosses fly long distances?', 'a': 'dynamic soaring'},
+            {'q': 'What bird has the largest wing span?', 'a': ['wandering albatross','albatross']},
+            {'q': 'How do albatrosses fly long distances?', 'a': ['dynamic soaring','by dynamic flying']},
             {'q': 'What is a major threat to albatrosses?', 'a': 'fishing bycatch'}
         ]
     },
@@ -53,7 +53,7 @@ birds = {
         'questions': [
             {'q': 'Why are swifts rarely landing?', 'a': 'spend nearly entire life in the air'},
             {'q': 'What do swifts eat?', 'a': 'insects caught in the air'},
-            {'q': 'What is the swift\'s name derived from?', 'a': 'Greek ápous, meaning "footless"'}
+            {'q': 'What is the swift\'s name derived from?', 'a': ['Greek apous, meaning "footless"','apous','footless']}
         ]
     },
     'hoopoe': {
@@ -68,7 +68,7 @@ birds = {
         'file': 'owls.txt',
         'questions': [
             {'q': 'What allows owls to have excellent binocular vision?', 'a': 'large, fixed, tube-shaped eyes'},
-            {'q': 'How do owls pinpoint sounds?', 'a': 'asymmetrical ears'},
+            {'q': 'How do owls pinpoint sounds?', 'a': ['asymmetrical ears','different ears']},
             {'q': 'What do owls regurgitate as indigestible parts?', 'a': 'pellets'}
         ]
     },
@@ -77,14 +77,14 @@ birds = {
         'questions': [
             {'q': 'What are loons known for in terms of calls?', 'a': 'haunting calls'},
             {'q': 'Why are loons awkward on land?', 'a': 'legs set far back for swimming'},
-            {'q': 'What do loons primarily eat?', 'a': 'fish'}
+            {'q': 'What do loons primarily eat?', 'a': ['fish', 'sea animals', 'marine life']}
         ]
     },
     'eagle': {
         'file': 'eagle.txt',
         'questions': [
-            {'q': 'What are eagles known for in terms of eyesight?', 'a': 'incredible eyesight'},
-            {'q': 'What do eagles use to catch prey?', 'a': 'strong talons'},
+            {'q': 'What are eagles known for in terms of eyesight?', 'a': ['incredible eyesight','good eyesight', 'best eyesight']},
+            {'q': 'What do eagles use to catch prey?', 'a': ['strong talons','talons',]},
             {'q': 'What is the national emblem of the United States?', 'a': 'Bald Eagle'}
         ]
     }
@@ -140,12 +140,12 @@ def main():
                 # Prompt user for answer to the current question, strip and lowercase.
                 ans = input(q['q'] + " ").strip().lower()
                 # Check if the user's answer matches the correct answer (case-insensitive).
-                if ans == q['a'].lower():
+                if ans in q['a']:
                     #If correct, print success message.
                     print("Correct!\n")
                 else:
                     # If wrong, print the correct answer.
-                    print(f"Wrong. The correct answer is: {q['a']}\n")
+                    print(f"Wrong. The correct answer is: {q['a'][0]}\n")
             # Ask user if they want to try another bird.
             again = input("Do you want to try another bird? (y/n): ").strip().lower()
             # If not 'y', break the loop and end the program.
