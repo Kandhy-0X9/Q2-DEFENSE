@@ -79,7 +79,15 @@ def main():
     print("\nWelcome to birds questionnaire\n\n")
     # Print the list of available birds.
     print("Birds:\n")
-    print("Flamingo Columbidae Cassowaries Cranes Albatross")
+    print(
+    "- Flamingo\n"
+    "- Columbidae\n"
+    "- Cassowaries\n"
+    "- Cranes\n"
+    "- Albatross\n"
+    "- Swift"
+)
+
     
     # Start an infinite loop to allow multiple attempts.
     while True:
@@ -115,11 +123,19 @@ def main():
             # If not 'y', break the loop and end the program.
             if again != 'y':
                 # Print a thank you message.
-                print("Thank you for playing!")
+                print("Thank you for playing! Hope you learned something new about birds!")
                 break
         else:
             # If choice is invalid, print an error message with valid options.
-            print("Invalid choice. Please choose from: Flamingo, Columbidae, Cassowaries, Cranes, Albatross")
+            print("\nInvalid choice. Please choose from the following birds:\n"
+                "- Flamingo\n"
+                "- Columbidae\n"
+                "- Cassowaries\n"
+                "- Cranes\n"
+                "- Albatross\n"
+                "- Swift"
+            )
+
 
 # If this script is run directly (not imported), call the main function to start the program.
 if __name__ == "__main__":
