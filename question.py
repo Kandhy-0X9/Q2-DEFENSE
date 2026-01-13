@@ -137,7 +137,7 @@ def main():
             print("\nNow, answer the following questions based on the passage:\n")
             # Loop through each question for the chosen bird.
             for q in birds[choice]['questions']:
-                # Pseudocode: Prompt user for answer to the current question, strip and lowercase.
+                # Prompt user for answer to the current question, strip and lowercase.
                 ans = input(q['q'] + " ").strip().lower()
                 # Check if the user's answer matches the correct answer (case-insensitive).
                 if ans == q['a'].lower():
