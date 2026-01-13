@@ -47,12 +47,16 @@ birds = {
             {'q': 'How do albatrosses fly long distances?', 'a': 'dynamic soaring'},
             {'q': 'What is a major threat to albatrosses?', 'a': 'fishing bycatch'}
         ]
+    },
+    'swift': {
+        'file': 'swift.txt',
+        'questions': [
+            {'q': 'What is the fastest bird in level flight?', 'a': 'common swift'},
+            {'q': 'How long can swifts stay airborne?', 'a': 'up to 10 months'},
+            {'q': 'What do swifts eat?', 'a': 'insects'}
+        ]
     }
 }
-
-# Define a function to clear the terminal screen using OS-specific commands.
-def clearTerminal():
-    os.system('cls||clear')
 
 #  Define the main function that contains the program's logic:
 # - Clear the screen
@@ -68,8 +72,8 @@ def clearTerminal():
 # - Exit when user chooses not to continue
 def main():
     # Call function to clear the terminal screen.
-    clearTerminal()
-    # Pseudocode: Print the program title.
+    os.system('cls||clear')
+    # Print the program title.
     print("BIRDS QUESTIONNAIRE\n")
     # Print a welcome message.
     print("\nWelcome to birds questionnaire\n\n")
