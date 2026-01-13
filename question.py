@@ -79,6 +79,14 @@ birds = {
             {'q': 'Why are loons awkward on land?', 'a': 'legs set far back for swimming'},
             {'q': 'What do loons primarily eat?', 'a': 'fish'}
         ]
+    },
+    'eagle': {
+        'file': 'eagle.txt',
+        'questions': [
+            {'q': 'What are eagles known for in terms of eyesight?', 'a': 'incredible eyesight'},
+            {'q': 'What do eagles use to catch prey?', 'a': 'strong talons'},
+            {'q': 'What is the national emblem of the United States?', 'a': 'Bald Eagle'}
+        ]
     }
 }
 
