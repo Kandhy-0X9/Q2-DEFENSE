@@ -71,6 +71,14 @@ birds = {
             {'q': 'How do owls pinpoint sounds?', 'a': 'asymmetrical ears'},
             {'q': 'What do owls regurgitate as indigestible parts?', 'a': 'pellets'}
         ]
+    },
+    'loon': {
+        'file': 'loon.txt',
+        'questions': [
+            {'q': 'What are loons known for in terms of calls?', 'a': 'haunting calls'},
+            {'q': 'Why are loons awkward on land?', 'a': 'legs set far back for swimming'},
+            {'q': 'What do loons primarily eat?', 'a': 'fish'}
+        ]
     }
 }
 
