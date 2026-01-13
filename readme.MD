@@ -29,4 +29,5 @@ Program Flow: Describe the step-by-step flow of your program. How will it execut
     Check the answers and provide corrections
     Loop the program
 
-link to the info in this project <https://birdsoftheworld.org/bow/home> , <https://github.com/Kandhy-0X9/Q2-DEFENSE>
+links
+    <https://birdsoftheworld.org/bow/home> , <https://github.com/Kandhy-0X9/Q2-DEFENSE>
