@@ -51,9 +51,25 @@ birds = {
     'swift': {
         'file': 'swift.txt',
         'questions': [
-            {'q': 'What is the fastest bird in level flight?', 'a': 'common swift'},
-            {'q': 'How long can swifts stay airborne?', 'a': 'up to 10 months'},
-            {'q': 'What do swifts eat?', 'a': 'insects'}
+            {'q': 'Why are swifts rarely landing?', 'a': 'spend nearly entire life in the air'},
+            {'q': 'What do swifts eat?', 'a': 'insects caught in the air'},
+            {'q': 'What is the swift\'s name derived from?', 'a': 'Greek ápous, meaning "footless"'}
+        ]
+    },
+    'hoopoe': {
+        'file': 'hoopoe.txt',
+        'questions': [
+            {'q': 'What is distinctive about the hoopoe\'s crest?', 'a': 'erectile crest of cinnamon feathers'},
+            {'q': 'How does the hoopoe feed?', 'a': 'probing soil with its bill'},
+            {'q': 'What is the hoopoe the national bird of?', 'a': 'Israel'}
+        ]
+    },
+    'owls': {
+        'file': 'owls.txt',
+        'questions': [
+            {'q': 'What allows owls to have excellent binocular vision?', 'a': 'large, fixed, tube-shaped eyes'},
+            {'q': 'How do owls pinpoint sounds?', 'a': 'asymmetrical ears'},
+            {'q': 'What do owls regurgitate as indigestible parts?', 'a': 'pellets'}
         ]
     }
 }
@@ -79,14 +95,10 @@ def main():
     print("\nWelcome to birds questionnaire\n\n")
     # Print the list of available birds.
     print("Birds:\n")
-    print(
-    "- Flamingo\n"
-    "- Columbidae\n"
-    "- Cassowaries\n"
-    "- Cranes\n"
-    "- Albatross\n"
-    "- Swift"
-)
+    print("\nAvailable Birds:\n")
+    for bird in sorted(birds):
+        print(f"- {bird.title()}")
+
 
     
     # Start an infinite loop to allow multiple attempts.
@@ -127,14 +139,11 @@ def main():
                 break
         else:
             # If choice is invalid, print an error message with valid options.
-            print("\nInvalid choice. Please choose from the following birds:\n"
-                "- Flamingo\n"
-                "- Columbidae\n"
-                "- Cassowaries\n"
-                "- Cranes\n"
-                "- Albatross\n"
-                "- Swift"
-            )
+            print("\nInvalid choice. Please choose from the following birds:\n")
+            print("\nAvailable Birds:\n")
+            for bird in sorted(birds):
+                print(f"- {bird.title()}")
+
 
 
 # If this script is run directly (not imported), call the main function to start the program.
