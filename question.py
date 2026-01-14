@@ -87,6 +87,22 @@ birds = {
             {'q': 'What do eagles use to catch prey?', 'a': ['strong talons','talons',]},
             {'q': 'What is the national emblem of the United States?', 'a': ['bald eagle', 'eagle']}
         ]    },
+    'heron': {
+        'file': 'heron.txt',
+        'questions': [
+            {'q': 'What does a heron use to catch fish?', 'a': ['sharp beak', 'dagger-like bill', 'spear']},
+            {'q': 'What is the name of a group of nesting herons?', 'a': ['heronries', 'heronry']},
+            {'q': 'What are the main habitats of herons?', 'a': ['marshes', 'ponds', 'rivers', 'coastlines', 'wet habitats']}
+        ]
+    },
+    'osprey': {
+        'file': 'osprey.txt',
+        'questions': [
+            {'q': 'What is the osprey also known as?', 'a': ['fish hawk']},
+            {'q': 'What is unique about the osprey\'s wing shape when soaring?', 'a': ['m shape', 'crooked bend']},
+            {'q': 'What do ospreys eat exclusively?', 'a': ['fish']}
+        ]
+    },
     'blackbird': {
         'file': 'blackbird.txt',
         'questions': [
@@ -165,7 +181,23 @@ birds = {
             {'q': 'What is the most striking feature of toucans?', 'a': ['large bill', 'oversized bill']},
             {'q': 'What do toucans primarily eat?', 'a': ['fruit', 'insects', 'small vertebrates']},
             {'q': 'What is the habitat of toucans?', 'a': ['rainforests', 'tropical forests']}
-        ]    }
+        ]    },
+    'turkey': {
+        'file': 'turkey.txt',
+        'questions': [
+            {'q': 'What is the fleshy growth that hangs over a turkey\'s beak called?', 'a': ['snood']},
+            {'q': 'How fast can wild turkeys run?', 'a': ['up to 25 mph', '25 mph', '25 miles per hour']},
+            {'q': 'What is a group of turkeys called?', 'a': ['flock']}
+        ]
+    },
+    'woodpecker': {
+        'file': 'woodpecker.txt',
+        'questions': [
+            {'q': 'What is the foot arrangement of woodpeckers called?', 'a': ['zygodactyl', 'zygodactyl feet']},
+            {'q': 'What do woodpeckers use their stiff tail feathers for?', 'a': ['support', 'prop', 'bracing against trees']},
+            {'q': 'Why do woodpeckers drum on trees?', 'a': ['communication', 'mating', 'territory', 'attract mates']}
+        ]
+    }
 }
 
 #  Define the main function that contains the program's logic:
