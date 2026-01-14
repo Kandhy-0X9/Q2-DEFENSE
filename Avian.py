@@ -197,6 +197,14 @@ birds = {
             {'q': 'What do woodpeckers use their stiff tail feathers for?', 'a': ['support', 'prop', 'bracing against trees']},
             {'q': 'Why do woodpeckers drum on trees?', 'a': ['communication', 'mating', 'territory', 'attract mates']}
         ]
+    },
+    'aves': {
+        'file': 'aves.txt',
+        'questions': [
+            {'q': 'What is the scientific class for birds?', 'a': ['aves']},
+            {'q': 'What are the key characteristics that define birds?', 'a': ['feathers', 'beaked jaws', 'hard-shelled eggs', 'warm-blooded', 'lightweight skeletons']},
+            {'q': 'How many bird species are estimated to exist worldwide?', 'a': ['around 10,000', '10,000', 'roughly 10,000']}
+        ]
     }
 }
 
