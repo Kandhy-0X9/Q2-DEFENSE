@@ -245,7 +245,7 @@ def main():
                 passage = f.read()
             # Print separators and the passage title.
             print("\n" + "="*50)
-            print("PASSAGE:", bird.title())
+            print("PASSAGE:", choice.title())
             print("="*50)
             # Print the full passage content.
             print(passage)
