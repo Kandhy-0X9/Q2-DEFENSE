@@ -203,7 +203,7 @@ birds = {
         'questions': [
             {'q': 'What is the scientific class for birds?', 'a': ['aves']},
             {'q': 'What are the key characteristics that define birds?', 'a': ['feathers', 'beaked jaws', 'hard-shelled eggs', 'warm-blooded', 'lightweight skeletons']},
-            {'q': 'How many bird species are estimated to exist worldwide?', 'a': ['around 10,000', '10,000', 'roughly 10,000']}
+            {'q': 'How many bird species are estimated to exist worldwide?', 'a': ['around 10,000', '10,000', 'roughly 10,000' 'approximately 10,000', 'about 10,000', 'some 10,000', 'nearly 10,000', 'close to 10,000', '10k', 'ten thousand']}
         ]
     }
 }
