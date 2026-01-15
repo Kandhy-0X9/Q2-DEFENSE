@@ -202,7 +202,7 @@ birds = {
         'file': 'aves.txt',
         'questions': [
             {'q': 'What is the scientific class for birds?', 'a': ['aves']},
-            {'q': 'What are the key characteristics that define birds?', 'a': ['feathers', 'beaked jaws', 'hard-shelled eggs', 'warm-blooded', 'lightweight skeletons']},
+            {'q': 'What are the key characteristics that define birds?', 'a': ['feathers', 'beaked jaws', 'hard-shelled eggs', 'warm-blooded', 'lightweight skeletons', 'wings', 'hollow bones']},
             {'q': 'How many bird species are estimated to exist worldwide?', 'a': ['around 10,000', '10,000', 'roughly 10,000' 'approximately 10,000', 'about 10,000', 'some 10,000', 'nearly 10,000', 'close to 10,000', '10k', 'ten thousand']}
         ]
     }
@@ -253,16 +253,16 @@ def main():
             # Print a message introducing the questions.
             print("\nNow, answer the following questions based on the passage:\n")
             # Loop through each question for the chosen bird.
-            for q in birds[choice]['questions']:
+            for que in birds[choice]['questions']:
                 # Prompt user for answer to the current question, strip and lowercase.
-                ans = input(q['q'] + " ").strip().lower()
+                ans = input(que['q'] + " ").strip().lower()
                 # Check if the user's answer matches the correct answer (case-insensitive).
-                if ans in q['a']:
+                if ans in que['a']:
                     #If correct, print success message.
                     print("Correct!\n")
                 else:
                     # If wrong, print the correct answer.
-                    print(f"Wrong. The correct answer is: {q['a'][0]}\n")
+                    print(f"Wrong. The correct answer is: {que['a'][0]}\n")
             # Ask user if they want to try another bird.
             again = input("Do you want to try another bird? (y/n): ").strip().lower()
             # If not 'y', break the loop and end the program.
