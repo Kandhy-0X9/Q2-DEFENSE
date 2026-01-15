@@ -25,7 +25,7 @@ birds = {
         ]
     },
     'cassowaries': {
-        'file': 'Cassowaries.txt',
+        'file': 'cassowaries.txt',
         'questions': [
             {'q': 'What is the casque on a cassowary?', 'a': ['a bony helmet','bone helmet']},
             {'q': 'Are cassowaries flightless?', 'a': ['yes','true']},
