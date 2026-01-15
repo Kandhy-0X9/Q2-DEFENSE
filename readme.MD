@@ -21,5 +21,7 @@
     Check the answers and provide corrections
     Loop the program
 
-## links
-    <https://birdsoftheworld.org/bow/home> , <https://github.com/Kandhy-0X9/Q2-DEFENSE> , <https://www.w3schools.com/python/>
+## Acknowledgments
+[Birds Of the world](<https://birdsoftheworld.org/bow/home>)
+
+[W3schools](<https://www.w3schools.com/python/>)
